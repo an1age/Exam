@@ -11,6 +11,12 @@ namespace MSPexam
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
+            PrintRandomNumber();
+        }
+        public static void PrintRandomNumber()
+        {
+            Random rand = new Random();
+            Console.WriteLine(rand.Next(1000));
         }
     }
 }
